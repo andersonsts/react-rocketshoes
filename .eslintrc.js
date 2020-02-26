@@ -41,6 +41,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'jsx-a11y/control-has-associated-label': 'off',
     'react/prefer-stateless-function': 'off',
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    'react/jsx-props-no-spreading': 'off',
   },
 };
