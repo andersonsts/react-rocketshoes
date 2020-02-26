@@ -13,12 +13,12 @@ export const ImagesGroup = styled.li`
   background: #fff;
   display: flex;
   flex-direction: column;
-  padding: 0px 14px 14px;
+  padding: 0px 20px 20px;
   border-radius: 4px;
   position: relative;
 
   &:hover figure {
-    opacity: 0.95;
+    opacity: 0.9;
   }
 
   > svg {
@@ -63,7 +63,7 @@ export const ImagesGroup = styled.li`
     transition: all 0.3s;
 
     &:hover {
-      background: ${lighten(0.03, '#7159c1')};
+      background: ${lighten(0.05, '#7159c1')};
     }
 
     div {
@@ -89,7 +89,6 @@ export const ImagesGroup = styled.li`
 
 export const Images = styled(Carousel)`
   width: 250px;
-  height: 250px;
   align-self: center;
 
   div {
