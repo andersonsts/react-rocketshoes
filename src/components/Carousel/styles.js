@@ -104,7 +104,7 @@ export const Images = styled(Carousel)`
     }
 
     figure:hover {
-      opacity: 0.95;
+      opacity: 0.9;
       transform: scale(1.02);
     }
   }
