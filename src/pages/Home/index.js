@@ -1,125 +1,241 @@
 import React from 'react';
-import { MdAddShoppingCart } from 'react-icons/md';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import {
+  MdAddShoppingCart,
+  MdFavoriteBorder,
+  MdFavorite,
+} from 'react-icons/md';
 
-import { ProductList } from './styles';
+import { Images, Container, ImagesGroup } from './styles';
 
 export default function Home() {
   return (
-    <ProductList>
-      <li>
-        <figure>
-          <img
-            src="https://static.netshoes.com.br/produtos/tenis-de-caminhada-leve-confortavel/04/E74-0492-304/E74-0492-304_zoom2.jpg?ims=326x"
-            alt="Tênis"
-          />
-        </figure>
-
-        <strong>Tênis de caminhada</strong>
-        <span>R$ 129,90</span>
-
-        <button type="button">
+    <Container>
+      <ImagesGroup>
+        <MdFavoriteBorder />
+        <Images
+          showStatus={false}
+          showThumbs={false}
+          showArrows={false}
+          autoPlay
+          infiniteLoop
+          stopOnHover
+        >
           <div>
-            <MdAddShoppingCart size={16} color="#fff" /> 4
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
           </div>
-
-          <span>ADICIONAR AO CARRINHO</span>
-        </button>
-      </li>
-      <li>
-        <figure>
-          <img
-            src="https://static.netshoes.com.br/produtos/tenis-de-caminhada-leve-confortavel/04/E74-0492-304/E74-0492-304_zoom2.jpg?ims=326x"
-            alt="Tênis"
-          />
-        </figure>
-
-        <strong>Tênis de caminhada</strong>
-        <span>R$ 129,90</span>
-
-        <button type="button">
           <div>
-            <MdAddShoppingCart size={16} color="#fff" /> 4
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
           </div>
-
-          <span>ADICIONAR AO CARRINHO</span>
-        </button>
-      </li>
-      <li>
-        <figure>
-          <img
-            src="https://static.netshoes.com.br/produtos/tenis-de-caminhada-leve-confortavel/04/E74-0492-304/E74-0492-304_zoom2.jpg?ims=326x"
-            alt="Tênis"
-          />
-        </figure>
-
-        <strong>Tênis de caminhada</strong>
-        <span>R$ 129,90</span>
-
-        <button type="button">
           <div>
-            <MdAddShoppingCart size={16} color="#fff" /> 4
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
           </div>
-
-          <span>ADICIONAR AO CARRINHO</span>
-        </button>
-      </li>
-      <li>
-        <figure>
-          <img
-            src="https://static.netshoes.com.br/produtos/tenis-de-caminhada-leve-confortavel/04/E74-0492-304/E74-0492-304_zoom2.jpg?ims=326x"
-            alt="Tênis"
-          />
-        </figure>
-
-        <strong>Tênis de caminhada</strong>
-        <span>R$ 129,90</span>
-
-        <button type="button">
+        </Images>
+        <strong>Tênis muito top</strong>
+        <span>R$ 200,00</span>
+        <button type="submit">
           <div>
-            <MdAddShoppingCart size={16} color="#fff" /> 4
+            <MdAddShoppingCart />
+            <span>3</span>
           </div>
-
-          <span>ADICIONAR AO CARRINHO</span>
+          <strong>ADICIONAR AO CARRINHO</strong>
         </button>
-      </li>
-      <li>
-        <figure>
-          <img
-            src="https://static.netshoes.com.br/produtos/tenis-de-caminhada-leve-confortavel/04/E74-0492-304/E74-0492-304_zoom2.jpg?ims=326x"
-            alt="Tênis"
-          />
-        </figure>
-
-        <strong>Tênis de caminhada</strong>
-        <span>R$ 129,90</span>
-
-        <button type="button">
+      </ImagesGroup>
+      <ImagesGroup>
+        <MdFavorite />
+        <Images
+          showStatus={false}
+          showThumbs={false}
+          showArrows={false}
+          autoPlay
+          infiniteLoop
+          stopOnHover
+        >
           <div>
-            <MdAddShoppingCart size={16} color="#fff" /> 4
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
           </div>
-
-          <span>ADICIONAR AO CARRINHO</span>
-        </button>
-      </li>
-      <li>
-        <figure>
-          <img
-            src="https://static.netshoes.com.br/produtos/tenis-de-caminhada-leve-confortavel/04/E74-0492-304/E74-0492-304_zoom2.jpg?ims=326x"
-            alt="Tênis"
-          />
-        </figure>
-
-        <strong>Tênis de caminhada</strong>
-        <span>R$ 129,90</span>
-
-        <button type="button">
           <div>
-            <MdAddShoppingCart size={16} color="#fff" /> 4
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
           </div>
-
-          <span>ADICIONAR AO CARRINHO</span>
+          <div>
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
+          </div>
+        </Images>
+        <strong>Tênis muito top</strong>
+        <span>R$ 200,00</span>
+        <button type="submit">
+          <div>
+            <MdAddShoppingCart />
+            <span>3</span>
+          </div>
+          <strong>ADICIONAR AO CARRINHO</strong>
         </button>
-      </li>
-    </ProductList>
+      </ImagesGroup>
+      <ImagesGroup>
+        <MdFavoriteBorder />
+        <Images
+          showStatus={false}
+          showThumbs={false}
+          showArrows={false}
+          autoPlay
+          infiniteLoop
+          stopOnHover
+        >
+          <div>
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
+          </div>
+        </Images>
+        <strong>Tênis muito top</strong>
+        <span>R$ 200,00</span>
+        <button type="submit">
+          <div>
+            <MdAddShoppingCart />
+            <span>3</span>
+          </div>
+          <strong>ADICIONAR AO CARRINHO</strong>
+        </button>
+      </ImagesGroup>
+      <ImagesGroup>
+        <MdFavoriteBorder />
+        <Images
+          showStatus={false}
+          showThumbs={false}
+          showArrows={false}
+          autoPlay
+          infiniteLoop
+          stopOnHover
+        >
+          <div>
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
+          </div>
+        </Images>
+        <strong>Tênis muito top</strong>
+        <span>R$ 200,00</span>
+        <button type="submit">
+          <div>
+            <MdAddShoppingCart />
+            <span>3</span>
+          </div>
+          <strong>ADICIONAR AO CARRINHO</strong>
+        </button>
+      </ImagesGroup>
+      <ImagesGroup>
+        <MdFavoriteBorder />
+        <Images
+          showStatus={false}
+          showThumbs={false}
+          showArrows={false}
+          autoPlay
+          infiniteLoop
+          stopOnHover
+        >
+          <div>
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                alt=""
+              />
+            </figure>
+          </div>
+        </Images>
+        <strong>Tênis muito top</strong>
+        <span>R$ 200,00</span>
+        <button type="submit">
+          <div>
+            <MdAddShoppingCart />
+            <span>3</span>
+          </div>
+          <strong>ADICIONAR AO CARRINHO</strong>
+        </button>
+      </ImagesGroup>
+    </Container>
   );
 }

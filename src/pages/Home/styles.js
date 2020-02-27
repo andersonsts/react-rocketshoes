@@ -1,86 +1,111 @@
 import styled from 'styled-components';
+import { Carousel } from 'react-responsive-carousel';
 import { lighten } from 'polished';
 
-export const ProductList = styled.ul`
+export const Container = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   list-style: none;
+`;
 
-  li {
+export const ImagesGroup = styled.li`
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 20px;
+  border-radius: 4px;
+  position: relative;
+
+  &:hover figure {
+    opacity: 0.9;
+  }
+
+  > svg {
+    color: #333;
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    margin: 10px 10px;
+    transition: all 0.3s;
+    z-index: 2;
+
+    &:hover {
+      transform: scale(1.03);
+      cursor: pointer;
+    }
+  }
+
+  > strong {
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+    margin-top: 5px;
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+    overflow-wrap: break-word;
+  }
+
+  > span {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 5px 0px 20px;
+  }
+
+  button {
     display: flex;
-    flex-direction: column;
-    background: #fff;
+    background: #7159c1;
+    border: 0;
+    align-items: center;
     border-radius: 4px;
-    width: 310px;
-    padding: 20px;
 
-    &:hover figure {
-      opacity: 0.9;
+    margin-top: auto;
+    transition: all 0.3s;
+
+    &:hover {
+      background: ${lighten(0.05, '#7159c1')};
     }
 
-    figure img {
-      align-self: center;
-      max-width: 250px;
-      opacity: 1;
-    }
-
-    figure {
-      transition: opacity 0.2s ease-in-out;
-    }
-
-    > strong {
-      font-size: 16px;
-      line-height: 20px;
-      color: #333;
-      margin-top: 5px;
-      border-top: 1px solid #eee;
-      padding-top: 8px;
-      overflow-wrap: break-word;
-    }
-
-    > span {
-      font-size: 21px;
-      font-weight: bold;
-      margin: 5px 0 20px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #eee;
-    }
-
-    button {
-      background: #7159c1;
-      color: #fff;
-      border: 0;
-      border-radius: 4px;
-      overflow: hidden;
-      margin-top: auto;
-
+    div {
       display: flex;
       align-items: center;
+      justify-content: center;
+      color: #fff;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.1);
 
-      transition: background 0.2s ease-in-out;
-
-      &:hover {
-        background: ${lighten(0.04, '#7159c1')};
+      svg {
+        font-size: 18px;
+        margin-right: 4px;
       }
+    }
 
-      div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 12px;
-        background: rgba(0, 0, 0, 0.1);
+    strong {
+      color: #fff;
+      margin-left: 15px;
+    }
+  }
+`;
 
-        svg {
-          margin-right: 5px;
-        }
-      }
+export const Images = styled(Carousel)`
+  width: 250px;
+  align-self: center;
 
-      span {
-        flex: 1;
-        text-align: center;
-        font-weight: bold;
-      }
+  div {
+    background: #fff;
+    width: 250px;
+    height: 250px;
+    border-radius: 2px;
+    align-self: center;
+
+    figure {
+      opacity: 1;
+      transition: all 0.4s;
+    }
+
+    figure:hover {
+      opacity: 0.9;
+      transform: scale(1.02);
     }
   }
 `;
