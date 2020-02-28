@@ -9,6 +9,32 @@ export const Container = styled.ul`
   list-style: none;
 `;
 
+export const AddFavorite = styled.button`
+  border: 0;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  margin-top: 15px;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > svg {
+      width: 27px;
+      height: 27px;
+    }
+  }
+`;
+
 export const ImagesGroup = styled.li`
   background: #fff;
   display: flex;
@@ -16,6 +42,7 @@ export const ImagesGroup = styled.li`
   padding: 0px 20px 20px;
   border-radius: 4px;
   position: relative;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 
   &:hover figure {
     opacity: 0.9;
@@ -52,7 +79,7 @@ export const ImagesGroup = styled.li`
     margin: 5px 0px 20px;
   }
 
-  button {
+  button.add {
     display: flex;
     background: #7159c1;
     border: 0;

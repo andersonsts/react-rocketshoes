@@ -12,12 +12,12 @@ export const ImageGroup = styled.li`
   border-radius: 4px;
   padding: 20px 20px 20px;
 
-  > button {
+  button {
     border: none;
-    margin-top: 19px;
+    margin-top: 35px;
   }
 
-  > figure {
-    margin-bottom: 10px;
+  figure {
+    margin-bottom: 30px;
   }
 `;

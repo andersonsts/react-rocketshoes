@@ -33,20 +33,22 @@ export default function Cart() {
               <span>R$ 129,90</span>
             </td>
             <td>
-              <button type="submit">
-                <MdRemoveCircleOutline size={20} color="#7159c1" />
-              </button>
-              <input type="number" readOnly value={2} />
-              <button type="submit">
-                <MdAddCircleOutline size={20} color="#7159c1" />
-              </button>
+              <div>
+                <button type="submit">
+                  <MdRemoveCircleOutline size={20} color="#7159c1" />
+                </button>
+                <input type="number" readOnly value={2} />
+                <button type="submit">
+                  <MdAddCircleOutline size={20} color="#7159c1" />
+                </button>
+              </div>
             </td>
             <td>
               <strong>R$ 259,90</strong>
             </td>
             <td>
               <button type="button">
-                <MdDelete sizse={20} color="#7159c1" />
+                <MdDelete size={20} color="#7159c1" />
               </button>
             </td>
           </tr>
