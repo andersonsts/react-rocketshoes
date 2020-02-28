@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Carousel } from 'react-responsive-carousel';
-import Loader from 'react-loader-spinner';
+// import Loader from 'react-loader-spinner';
 import { lighten } from 'polished';
 
 export const Container = styled.ul`
@@ -140,8 +140,8 @@ export const Images = styled(Carousel)`
   }
 `;
 
-export const Loading = styled(Loader)`
-  position: absolute;
-  top: 150px;
-  left: calc(50% - 50px);
-`;
+// export const Loading = styled(Loader)`
+//   position: absolute;
+//   top: calc(50% - 50px);
+//   left: calc(50% - 50px);
+// `;

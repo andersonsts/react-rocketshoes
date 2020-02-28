@@ -101,6 +101,6 @@ export const Total = styled.div`
 
 export const Loading = styled(Loader)`
   position: absolute;
-  top: 150px;
+  top: calc(50% - 50px);
   left: calc(50% - 50px);
 `;

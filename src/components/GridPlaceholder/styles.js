@@ -11,13 +11,18 @@ export const ImageGroup = styled.li`
   background: #fff;
   border-radius: 4px;
   padding: 20px 20px 20px;
+  transition: opacity 0.2s;
+
+  span {
+    margin-top: 10px;
+  }
 
   button {
     border: none;
-    margin-top: 35px;
+    margin-top: 10px;
   }
 
   figure {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 `;

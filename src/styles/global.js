@@ -1,9 +1,21 @@
 import { createGlobalStyle } from 'styled-components';
 
-import background from '../assets/images/background.svg';
+import background from '../assets/images/teste.png';
 
 export default createGlobalStyle`
-   @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+  ::-webkit-scrollbar {
+    width: 13px;
+    background: #fff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      /* -webkit-border-radius: 8px; */
+      /* border-radius: 2px; */
+      background: #777; 
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  }
 
   * {
     margin: 0;

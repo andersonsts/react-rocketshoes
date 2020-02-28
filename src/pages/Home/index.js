@@ -9,7 +9,8 @@ import {
 import api from '../../services/api';
 import { formatPrice } from '../../util/format';
 
-import { Images, Container, ImagesGroup, AddFavorite, Loading } from './styles';
+import Loading from '../../components/GridPlaceholder';
+import { Images, Container, ImagesGroup, AddFavorite } from './styles';
 
 export default class Home extends Component {
   state = {
@@ -24,11 +25,11 @@ export default class Home extends Component {
     this.loadProducts();
 
     setTimeout(() => {
-      this.setState({ loading: false });
+      this.setState({ loading: false, ready: true });
 
       setTimeout(() => {
         this.setState({ ready: true });
-      }, 10);
+      }, 0);
     }, 1000);
   }
 
@@ -65,7 +66,7 @@ export default class Home extends Component {
     return (
       <>
         {loading ? (
-          <Loading type="MutatingDots" color="#fff" height={100} width={100} />
+          <Loading repeatCount={6} />
         ) : (
           <Container>
             {products.map(product => (

@@ -15,8 +15,11 @@ export default function GridPlaceholder({ repeatCount }) {
             <Skeleton height={235} duration={2} />
           </figure>
           <strong>
-            <Skeleton width={220} height={46} duration={2} />
+            <Skeleton width={260} height={40} duration={2} />
           </strong>
+          <span>
+            <Skeleton width={150} height={40} duration={2} />
+          </span>
           <button type="button">
             <SkeletonTheme color="#7159c1">
               <Skeleton width={273} height={42} duration={2} />
