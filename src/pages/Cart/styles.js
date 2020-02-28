@@ -9,6 +9,7 @@ export const Container = styled.div`
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   transition: opacity 0.35s ease-in;
   opacity: ${props => (props.ready ? '1' : '0')};
+  height: 100%;
 
   footer {
     margin-top: 30px;
@@ -101,6 +102,7 @@ export const Total = styled.div`
 
 export const Loading = styled(Loader)`
   position: absolute;
-  top: calc(50% - 50px);
+  top: 150px;
   left: calc(50% - 50px);
+  height: 100%;
 `;
