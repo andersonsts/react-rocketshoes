@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Loader from 'react-loader-spinner';
 import { darken } from 'polished';
 
 export const Container = styled.div`
@@ -6,6 +7,8 @@ export const Container = styled.div`
   background: #fff;
   border-radius: 4px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.35s ease-in;
+  opacity: ${props => (props.ready ? '1' : '0')};
 
   footer {
     margin-top: 30px;
@@ -94,4 +97,10 @@ export const Total = styled.div`
     font-size: 28px;
     margin-left: 5px;
   }
+`;
+
+export const Loading = styled(Loader)`
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 50px);
 `;

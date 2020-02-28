@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Carousel } from 'react-responsive-carousel';
+import Loader from 'react-loader-spinner';
 import { lighten } from 'polished';
 
 export const Container = styled.ul`
@@ -17,10 +18,9 @@ export const AddFavorite = styled.button`
   justify-content: center;
   align-self: flex-end;
   margin-top: 15px;
-  transition: all 0.2s;
 
-  &:hover {
-    transform: scale(1.05);
+  &:active svg {
+    transform: scale(1.2);
   }
 
   > div {
@@ -31,6 +31,7 @@ export const AddFavorite = styled.button`
     > svg {
       width: 27px;
       height: 27px;
+      transition: transform 0.25s;
     }
   }
 `;
@@ -42,6 +43,8 @@ export const ImagesGroup = styled.li`
   padding: 0px 20px 20px;
   border-radius: 4px;
   position: relative;
+  transition: opacity 0.4s ease-in;
+  opacity: ${props => (props.ready ? '1' : '0')};
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 
   &:hover figure {
@@ -135,4 +138,10 @@ export const Images = styled(Carousel)`
       transform: scale(1.02);
     }
   }
+`;
+
+export const Loading = styled(Loader)`
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 50px);
 `;
