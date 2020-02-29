@@ -7,7 +7,7 @@ export const Container = styled.div`
   background: #fff;
   border-radius: 4px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-  transition: opacity 0.35s ease-in;
+  transition: opacity 0.25s ease-in;
   opacity: ${props => (props.ready ? '1' : '0')};
   height: 100%;
 
