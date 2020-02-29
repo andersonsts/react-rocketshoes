@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import {
   MdRemoveCircleOutline,
   MdAddCircleOutline,
@@ -7,17 +8,17 @@ import {
 
 import { Container, ProductTable, Total, Loading } from './styles';
 
-export default class Cart extends Component {
+class Cart extends Component {
   state = {
     loading: true,
     ready: false,
   };
 
   componentDidMount() {
-    this.temp();
+    this.loadingTime();
   }
 
-  temp = () => {
+  loadingTime = () => {
     setTimeout(() => {
       this.setState({ loading: false });
 
@@ -29,6 +30,7 @@ export default class Cart extends Component {
 
   render() {
     const { loading, ready } = this.state;
+    const { cart } = this.props;
 
     return (
       <>
@@ -47,37 +49,38 @@ export default class Cart extends Component {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>
-                    <img
-                      src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg"
-                      alt=""
-                    />
-                  </td>
-                  <td>
-                    <strong>Tênis muito massa</strong>
-                    <span>R$ 129,90</span>
-                  </td>
-                  <td>
-                    <div>
-                      <button type="submit">
-                        <MdRemoveCircleOutline size={20} color="#7159c1" />
+                {cart.map(product => (
+                  <tr>
+                    <td>
+                      <figure>
+                        <img src={product.image[0]} alt={product.title} />
+                      </figure>
+                    </td>
+                    <td>
+                      <strong>{product.title}</strong>
+                      <span>{product.priceFormatted}</span>
+                    </td>
+                    <td>
+                      <div>
+                        <button type="submit">
+                          <MdRemoveCircleOutline size={20} color="#7159c1" />
+                        </button>
+                        <input type="number" readOnly value={product.amount} />
+                        <button type="submit">
+                          <MdAddCircleOutline size={20} color="#7159c1" />
+                        </button>
+                      </div>
+                    </td>
+                    <td>
+                      <strong>R$ 259,90</strong>
+                    </td>
+                    <td>
+                      <button type="button">
+                        <MdDelete size={20} color="#7159c1" />
                       </button>
-                      <input type="number" readOnly value={2} />
-                      <button type="submit">
-                        <MdAddCircleOutline size={20} color="#7159c1" />
-                      </button>
-                    </div>
-                  </td>
-                  <td>
-                    <strong>R$ 259,90</strong>
-                  </td>
-                  <td>
-                    <button type="button">
-                      <MdDelete size={20} color="#7159c1" />
-                    </button>
-                  </td>
-                </tr>
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </ProductTable>
 
@@ -95,3 +98,9 @@ export default class Cart extends Component {
     );
   }
 }
+
+const mapStateToProps = state => ({
+  cart: state.cart,
+});
+
+export default connect(mapStateToProps)(Cart);

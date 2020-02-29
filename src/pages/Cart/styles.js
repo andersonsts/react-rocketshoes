@@ -49,8 +49,21 @@ export const ProductTable = styled.table`
     border-bottom: 1px solid #eee;
   }
 
+  figure {
+    transition: opacity 0.3s;
+  }
+
+  figure:hover {
+    opacity: 0.9;
+  }
+
+  figure:hover img {
+    transform: scale(1.04);
+  }
+
   img {
     height: 100px;
+    transition: all 0.3s;
   }
 
   strong {

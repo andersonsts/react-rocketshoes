@@ -21,7 +21,7 @@ class Home extends Component {
   };
 
   componentDidMount() {
-    this.setState({ loading: true, ready: false });
+    this.setState({ loading: true });
 
     this.loadProducts();
 
@@ -31,7 +31,7 @@ class Home extends Component {
       setTimeout(() => {
         this.setState({ ready: true });
       }, 0);
-    }, 1000);
+    }, 500);
   }
 
   async loadProducts() {
