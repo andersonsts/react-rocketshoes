@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import {
   MdAddShoppingCart,
@@ -12,7 +13,7 @@ import { formatPrice } from '../../util/format';
 import Loading from '../../components/GridPlaceholder';
 import { Images, Container, ImagesGroup, AddFavorite } from './styles';
 
-export default class Home extends Component {
+class Home extends Component {
   state = {
     products: [],
     loading: null,
@@ -59,6 +60,15 @@ export default class Home extends Component {
 
     this.loadProducts();
   }
+
+  handleAddProduct = product => {
+    const { dispatch } = this.props;
+
+    dispatch({
+      type: 'ADD_TO_CART',
+      product,
+    });
+  };
 
   render() {
     const { products, loading, ready } = this.state;
@@ -109,7 +119,11 @@ export default class Home extends Component {
                 <strong>{product.title}</strong>
                 <span>{product.priceFormatted}</span>
 
-                <button type="button" className="add">
+                <button
+                  type="button"
+                  className="add"
+                  onClick={() => this.handleAddProduct(product)}
+                >
                   <div>
                     <MdAddShoppingCart />
                     <span>3</span>
@@ -124,3 +138,5 @@ export default class Home extends Component {
     );
   }
 }
+
+export default connect()(Home);
