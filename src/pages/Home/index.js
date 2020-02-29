@@ -90,6 +90,13 @@ export default class Home extends Component {
                   autoPlay
                   infiniteLoop
                   stopOnHover
+                  interval={
+                    (Math.floor(Math.random() * (11 - 1 + 3)) + 3) * 1000
+                  }
+                  transitionTime={
+                    Math.floor(Math.random() * (11 - 1 + 5) + 5) * 100
+                  }
+                  selectedItem={Math.floor(Math.random() * (3 - 1 + 1)) + 1}
                 >
                   {product.image.map(img => (
                     <div key={img}>

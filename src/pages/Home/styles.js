@@ -62,7 +62,7 @@ export const ImagesGroup = styled.li`
     z-index: 2;
 
     &:hover {
-      transform: scale(1.03);
+      transform: scale(1.05);
       cursor: pointer;
     }
   }
@@ -136,7 +136,7 @@ export const Images = styled(Carousel)`
 
     figure:hover {
       opacity: 0.9;
-      transform: scale(1.02);
+      transform: scale(1.05);
     }
   }
 `;

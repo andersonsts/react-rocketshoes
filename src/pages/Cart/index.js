@@ -50,7 +50,7 @@ export default class Cart extends Component {
                 <tr>
                   <td>
                     <img
-                      src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ims=120x"
+                      src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg"
                       alt=""
                     />
                   </td>
