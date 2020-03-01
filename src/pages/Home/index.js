@@ -103,9 +103,7 @@ class Home extends Component {
                   interval={
                     (Math.floor(Math.random() * (11 - 1 + 3)) + 3) * 1000
                   }
-                  transitionTime={
-                    Math.floor(Math.random() * (11 - 1 + 5) + 5) * 100
-                  }
+                  transitionTime={2000}
                   selectedItem={Math.floor(Math.random() * (3 - 1 + 1)) + 1}
                 >
                   {product.image.map(img => (
