@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { Link } from 'react-router-dom';
 import {
   MdRemoveCircleOutline,
   MdAddCircleOutline,
@@ -54,8 +55,9 @@ class Cart extends Component {
             {cart.length === 0 ? (
               <EmptyCart>
                 <MdRemoveShoppingCart />
-                <strong>Seu carrinho está vazio.</strong>
-                <p>Volte para a Home e realize algum pedido :)</p>
+                <strong>O CARRINHO DE COMPRAS ESTÁ VAZIO</strong>
+                <p>Volte para a Home e adicione algum produto</p>
+                <Link to="/">IR PARA A HOME</Link>
               </EmptyCart>
             ) : (
               <>

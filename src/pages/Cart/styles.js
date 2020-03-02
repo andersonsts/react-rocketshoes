@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Loader from 'react-loader-spinner';
-import { darken } from 'polished';
+import { darken, lighten } from 'polished';
 
 export const Container = styled.div`
   padding: 30px;
@@ -130,19 +130,35 @@ export const EmptyCart = styled.div`
   > svg {
     width: 180px;
     height: 180px;
-    opacity: 0.3;
+    opacity: 0.15;
   }
 
   > strong {
-    font-size: 40px;
+    font-size: 23px;
     color: #000;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   > p {
-    font-size: 32px;
+    font-size: 15px;
     /* font-weight: bold; */
     margin-top: 10px;
     color: #333;
+  }
+
+  > a {
+    margin-top: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    background: #7159c1;
+    padding: 13px 20px;
+    color: #fff;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+      background: ${lighten(0.05, '#7159c1')};
+    }
   }
 `;
