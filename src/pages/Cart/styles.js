@@ -119,3 +119,24 @@ export const Loading = styled(Loader)`
   left: calc(50% - 50px);
   height: 100%;
 `;
+
+export const EmptyCart = styled.div`
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  > svg {
+    width: 180px;
+    height: 180px;
+    opacity: 0.3;
+  }
+
+  > p {
+    font-size: 40px;
+    /* font-weight: bold; */
+    margin-top: 50px;
+    color: #333;
+  }
+`;
