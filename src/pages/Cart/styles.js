@@ -133,10 +133,16 @@ export const EmptyCart = styled.div`
     opacity: 0.3;
   }
 
-  > p {
+  > strong {
     font-size: 40px;
-    /* font-weight: bold; */
+    color: #000;
     margin-top: 50px;
+  }
+
+  > p {
+    font-size: 32px;
+    /* font-weight: bold; */
+    margin-top: 10px;
     color: #333;
   }
 `;

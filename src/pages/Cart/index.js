@@ -54,10 +54,8 @@ class Cart extends Component {
             {cart.length === 0 ? (
               <EmptyCart>
                 <MdRemoveShoppingCart />
-                <p>
-                  Seu carrinho está vazio. Volte para a Home e realize algum
-                  pedido :)
-                </p>
+                <strong>Seu carrinho está vazio.</strong>
+                <p>Volte para a Home e realize algum pedido :)</p>
               </EmptyCart>
             ) : (
               <>
