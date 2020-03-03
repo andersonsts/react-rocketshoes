@@ -14,6 +14,27 @@ export const Cart = styled(Link)`
   align-items: center;
   text-decoration: none;
   transition: opacity 0.4s;
+  position: relative;
+
+  &:after {
+    content: '${props => (props.cartSize > 0 ? props.cartSize : '')}';
+    color: #fff;
+    opacity: ${props => (props.cartSize > 0 ? '1' : '0')};
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 50%;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    transition: opacity 0.15s ease-in-out;
+  }
 
   &:hover {
     opacity: 0.7;

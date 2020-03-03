@@ -8,18 +8,16 @@ import { Container, Cart } from './styles';
 import logo from '../../assets/images/logo.svg';
 
 function Header({ cartSize }) {
-  console.log(cartSize);
-
   return (
     <Container>
       <Link to="/">
         <img src={logo} alt="Rocketshoes" />
       </Link>
 
-      <Cart to="/cart">
+      <Cart to="/cart" cartSize={cartSize}>
         <div>
           <strong>Meu carrinho</strong>
-          <span>{cartSize} itens</span>
+          {/* <span>{cartSize} itens</span> */}
         </div>
         <MdShoppingCart size={36} color="#fff" />
       </Cart>
