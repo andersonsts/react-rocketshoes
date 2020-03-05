@@ -155,7 +155,7 @@ export const EmptyCart = styled.div`
     background: #7159c1;
     padding: 13px 20px;
     color: #fff;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.25s ease-in-out;
 
     &:hover {
       background: ${lighten(0.05, '#7159c1')};
