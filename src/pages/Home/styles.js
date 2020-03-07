@@ -118,7 +118,7 @@ export const ImagesGroup = styled.li`
   }
 `;
 
-export const Images = styled(Carousel)`
+export const Images = styled.div`
   width: 250px;
   align-self: center;
 

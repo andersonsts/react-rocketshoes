@@ -29,67 +29,49 @@
     {
       "id": 1,
       "title": "Tênis de Caminhada Leve Confortável",
-      "favorite": true,
-      "image": [
+      "favorite": false,
+      "image": 
         "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg",
-        "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg",
-        "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg"
-      ],
       "price": 179.9
     },
     {
       "id": 2,
       "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
       "favorite": false,
-      "image": [
+      "image": 
         "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis2.jpg",
-        "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis2.jpg",
-        "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis2.jpg"
-      ],
       "price": 139.9
     },
     {
       "id": 3,
       "title": "Tênis Adidas Duramo Lite 2.0",
       "favorite": false,
-      "image": [
+      "image": 
         "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis3.jpg",
-        "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis3.jpg",
-        "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis3.jpg"
-      ],
       "price": 219.9
     },
     {
       "id": 4,
       "title": "Tênis VK Caminhada Confortável Detalhes Couro Masculino",
       "favorite": false,
-      "image": [
+      "image": 
         "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis2.jpg",
-        "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis2.jpg",
-        "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis2.jpg"
-      ],
       "price": 139.9
     },
     {
       "id": 5,
       "title": "Tênis Adidas Duramo Lite",
       "favorite": false,
-      "image": [
+      "image": 
         "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis3.jpg",
-        "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis3.jpg",
-        "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis3.jpg"
-      ],
       "price": 219.9
     },
     {
       "id": 6,
       "title": "Tênis de Caminhada",
       "favorite": false,
-      "image": [
+      "image": 
         "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg",
-        "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg",
-        "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg"
-      ],
       "price": 179.9
     }
   ]

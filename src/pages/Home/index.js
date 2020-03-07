@@ -93,26 +93,12 @@ class Home extends Component {
                     )}
                   </div>
                 </AddFavorite>
-                <Images
-                  showStatus={false}
-                  showThumbs={false}
-                  showArrows={false}
-                  autoPlay
-                  infiniteLoop
-                  stopOnHover
-                  interval={
-                    (Math.floor(Math.random() * (11 - 1 + 3)) + 3) * 1000
-                  }
-                  transitionTime={2000}
-                  selectedItem={Math.floor(Math.random() * (3 - 1 + 1)) + 1}
-                >
-                  {product.image.map(img => (
-                    <div key={img}>
-                      <figure>
-                        <img src={img} alt="Imagem" />
-                      </figure>
-                    </div>
-                  ))}
+                <Images>
+                  <div key={product.id}>
+                    <figure>
+                      <img src={product.image} alt="Imagem" />
+                    </figure>
+                  </div>
                 </Images>
                 <strong>{product.title}</strong>
                 <span>{product.priceFormatted}</span>
