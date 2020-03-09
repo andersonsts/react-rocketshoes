@@ -5,12 +5,18 @@ import api from '../../../services/api';
 // import history from '../../../services/history';
 import { formatPrice } from '../../../util/format';
 
-import { addToCartSuccess, updateAmountSuccess } from './actions';
+import {
+  addToCartSuccess,
+  updateAmountSuccess,
+  setLoadingProduct,
+} from './actions';
 
 function* addToCart({ id }) {
   const productExists = yield select(state =>
     state.cart.find(p => p.id === id)
   );
+
+  yield put(setLoadingProduct(id, true));
 
   const stock = yield call(api.get, `/stock/${id}`);
 
@@ -36,7 +42,7 @@ function* addToCart({ id }) {
     };
 
     yield put(addToCartSuccess(data));
-
+    yield put(setLoadingProduct(id, false));
     // history.push('/cart');
   }
 }

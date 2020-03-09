@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Carousel } from 'react-responsive-carousel';
+// import { Carousel } from 'react-responsive-carousel';
 // import Loader from 'react-loader-spinner';
 import { lighten } from 'polished';
 
@@ -120,18 +120,23 @@ export const ImagesGroup = styled.li`
 
 export const Images = styled.div`
   width: 250px;
-  align-self: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 70px;
+  margin-top: 10px;
 
   div {
     background: #fff;
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 200px;
     border-radius: 2px;
     align-self: center;
 
     figure {
       opacity: 1;
       transition: all 0.4s;
+      height: 200px;
     }
 
     figure:hover {

@@ -87,14 +87,14 @@ class Home extends Component {
                 >
                   <div>
                     {product.favorite ? (
-                      <MdFavorite color="red" />
+                      <MdFavorite color="#ba55d3" />
                     ) : (
                       <MdFavoriteBorder />
                     )}
                   </div>
                 </AddFavorite>
                 <Images>
-                  <div key={product.id}>
+                  <div>
                     <figure>
                       <img src={product.image} alt="Imagem" />
                     </figure>
@@ -112,6 +112,7 @@ class Home extends Component {
                     <MdAddShoppingCart size={16} color="#fff" />
                     {amount[product.id] || 0}
                   </div>
+                  <h1>{product.status}</h1>
                   <strong>ADICIONAR AO CARRINHO</strong>
                 </button>
               </ImagesGroup>
