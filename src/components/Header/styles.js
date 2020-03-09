@@ -26,7 +26,7 @@ export const Cart = styled(Link)`
     font-weight: bold;
     font-size: 12px;
     border-radius: 50%;
-    background: #ba55d3;
+    background: red;
     display: flex;
     align-items: center;
     justify-content: center;

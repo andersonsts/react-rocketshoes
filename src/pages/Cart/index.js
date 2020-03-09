@@ -76,7 +76,7 @@ class Cart extends Component {
                       <tr>
                         <td>
                           <figure>
-                            <img src={product.image[0]} alt={product.title} />
+                            <img src={product.image} alt={product.title} />
                           </figure>
                         </td>
                         <td>

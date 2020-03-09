@@ -43,6 +43,7 @@ function* addToCart({ id }) {
 
     yield put(addToCartSuccess(data));
     yield put(setLoadingProduct(id, false));
+
     // history.push('/cart');
   }
 }

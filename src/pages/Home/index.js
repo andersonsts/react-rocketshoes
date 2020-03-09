@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import {
   MdAddShoppingCart,
   MdFavoriteBorder,
   MdFavorite,
 } from 'react-icons/md';
+import Loader from 'react-loader-spinner';
 
 import api from '../../services/api';
 import { formatPrice } from '../../util/format';
@@ -42,6 +42,7 @@ class Home extends Component {
     const data = response.data.map(product => ({
       ...product,
       priceFormatted: formatPrice(product.price),
+      loadingProduct: false,
     }));
 
     this.setState({ products: data });
@@ -87,7 +88,7 @@ class Home extends Component {
                 >
                   <div>
                     {product.favorite ? (
-                      <MdFavorite color="#ba55d3" />
+                      <MdFavorite color="red" />
                     ) : (
                       <MdFavoriteBorder />
                     )}
@@ -108,11 +109,20 @@ class Home extends Component {
                   className="add"
                   onClick={() => this.handleAddProduct(product.id)}
                 >
-                  <div>
-                    <MdAddShoppingCart size={16} color="#fff" />
-                    {amount[product.id] || 0}
-                  </div>
-                  <h1>{product.status}</h1>
+                  {product.loadingProduct ? (
+                    <Loader
+                      type="Puff"
+                      color="#00BFFF"
+                      height={20}
+                      width={20}
+                      timeout={3000} // 3 secs
+                    />
+                  ) : (
+                    <div>
+                      <MdAddShoppingCart size={16} color="#fff" />
+                      {amount[product.id] || 0}
+                    </div>
+                  )}
                   <strong>ADICIONAR AO CARRINHO</strong>
                 </button>
               </ImagesGroup>
