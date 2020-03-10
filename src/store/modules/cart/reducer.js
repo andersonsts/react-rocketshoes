@@ -5,6 +5,7 @@ export default function cart(state = [], action) {
     case '@cart/ADD_SUCCESS':
       return produce(state, draft => {
         const { product } = action;
+        product.loadingProduct = false;
 
         draft.push(product);
       });

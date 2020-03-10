@@ -43,7 +43,7 @@
     {
       "id": 3,
       "title": "Tênis Adidas Duramo Lite 2.0",
-      "favorite": true,
+      "favorite": false,
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis3.jpg",
       "price": 219.9
     },

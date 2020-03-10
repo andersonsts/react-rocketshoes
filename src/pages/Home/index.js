@@ -44,6 +44,7 @@ class Home extends Component {
       priceFormatted: formatPrice(product.price),
       loadingProduct: false,
     }));
+    console.log(data);
 
     this.setState({ products: data });
   }
@@ -115,7 +116,6 @@ class Home extends Component {
                       color="#00BFFF"
                       height={20}
                       width={20}
-                      timeout={3000} // 3 secs
                     />
                   ) : (
                     <div>
