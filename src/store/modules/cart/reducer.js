@@ -45,6 +45,14 @@ export default function cart(state = INITIAL_STATE, action) {
           draft.addingIds.splice(loadingIndex, 1);
         }
       });
+    case '@cart/UPDATE_AMOUNT_FAILURE':
+      return produce(state, draft => {
+        const loadingIndex = draft.addingIds.indexOf(action.id);
+
+        if (loadingIndex >= 0) {
+          draft.addingIds.splice(loadingIndex, 1);
+        }
+      });
 
     default:
       return state;

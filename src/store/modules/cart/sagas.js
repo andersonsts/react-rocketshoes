@@ -5,7 +5,11 @@ import api from '../../../services/api';
 // import history from '../../../services/history';
 import { formatPrice } from '../../../util/format';
 
-import { addToCartSuccess, updateAmountSuccess } from './actions';
+import {
+  addToCartSuccess,
+  updateAmountSuccess,
+  updateAmountFailure,
+} from './actions';
 
 function* addToCart({ id }) {
   yield delay(300);
@@ -23,6 +27,7 @@ function* addToCart({ id }) {
 
   if (amount > stockAmount) {
     toast.error('Quantidade solicitada fora de estoque');
+    yield put(updateAmountFailure(id));
     return;
   }
 

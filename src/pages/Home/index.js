@@ -13,7 +13,7 @@ import { formatPrice } from '../../util/format';
 import * as CartActions from '../../store/modules/cart/actions';
 
 import Loading from '../../components/GridPlaceholder';
-import { Images, Container, ImagesGroup, AddFavorite } from './styles';
+import { Image, Container, ProductItem, AddFavorite } from './styles';
 
 class Home extends Component {
   state = {
@@ -80,7 +80,7 @@ class Home extends Component {
         ) : (
           <Container>
             {products.map(product => (
-              <ImagesGroup key={product.id} ready={ready}>
+              <ProductItem key={product.id} ready={ready}>
                 <AddFavorite
                   type="button"
                   onClick={() => this.handleAddFavorite(product.id)}
@@ -93,11 +93,11 @@ class Home extends Component {
                     )}
                   </div>
                 </AddFavorite>
-                <Images>
+                <Image>
                   <figure>
                     <img src={product.image} alt="Imagem" />
                   </figure>
-                </Images>
+                </Image>
                 <strong>{product.title}</strong>
                 <span>{product.priceFormatted}</span>
 
@@ -124,7 +124,7 @@ class Home extends Component {
 
                   <strong>ADICIONAR AO CARRINHO</strong>
                 </button>
-              </ImagesGroup>
+              </ProductItem>
             ))}
           </Container>
         )}

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 
-import { ImageGroup, Container } from './styles';
+import { ProductItem, Container } from './styles';
 
 export default function GridPlaceholder({ repeatCount }) {
   const howMany = Array.from(Array(repeatCount).keys());
@@ -10,7 +10,7 @@ export default function GridPlaceholder({ repeatCount }) {
   return (
     <Container>
       {howMany.map(placeholder => (
-        <ImageGroup key={placeholder}>
+        <ProductItem key={placeholder}>
           <figure style={{ alignSelf: 'center' }}>
             <Skeleton height={235} duration={2} />
           </figure>
@@ -25,7 +25,7 @@ export default function GridPlaceholder({ repeatCount }) {
               <Skeleton width={273} height={42} duration={2} />
             </SkeletonTheme>
           </button>
-        </ImageGroup>
+        </ProductItem>
       ))}
     </Container>
   );

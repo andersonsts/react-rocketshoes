@@ -8,7 +8,7 @@ export const Container = styled.div`
   height: 100%;
 `;
 
-export const ImageGroup = styled.li`
+export const ProductItem = styled.li`
   background: #fff;
   border-radius: 4px;
   padding: 20px 20px 20px;
@@ -24,6 +24,6 @@ export const ImageGroup = styled.li`
   }
 
   figure {
-    margin-bottom: 10px;
+    margin-bottom: 31px;
   }
 `;

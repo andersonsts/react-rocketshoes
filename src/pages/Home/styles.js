@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-// import { Carousel } from 'react-responsive-carousel';
-// import Loader from 'react-loader-spinner';
 import { lighten, darken } from 'polished';
 
 export const Container = styled.ul`
@@ -37,7 +35,7 @@ export const AddFavorite = styled.button`
   }
 `;
 
-export const ImagesGroup = styled.li`
+export const ProductItem = styled.li`
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -147,7 +145,7 @@ export const ImagesGroup = styled.li`
   }
 `;
 
-export const Images = styled.div`
+export const Image = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,9 +167,3 @@ export const Images = styled.div`
     transform: scale(1.05);
   }
 `;
-
-// export const Loading = styled(Loader)`
-//   position: absolute;
-//   top: calc(50% - 50px);
-//   left: calc(50% - 50px);
-// `;
