@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { lighten } from 'polished';
 
 export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 0;
+  margin: 40px 0;
   padding-bottom: 5px;
+
+  > a {
+    padding-bottom: 5px;
+  }
 `;
 
 export const Cart = styled(Link)`
@@ -32,12 +37,11 @@ export const Cart = styled(Link)`
     position: absolute;
     right: -10px;
     top: -10px;
-    transition: opacity 0.15s ease-in-out;
   }
 
-  &:hover {
-    opacity: 0.9;
-  } 
+  &:hover div strong {
+    color: ${lighten(0.35, '#7159c1')};
+  }  
 
   &:hover div:last-child {
     opacity: 1;
@@ -45,17 +49,20 @@ export const Cart = styled(Link)`
     transform: none;
   }
 
-  div {
-    text-align: right;
-    margin-right: 10px;
+  div.cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
 
-    strong {
+    > strong {
       display: block;
       color: #fff;
+      margin-right: 5px;
       transition: all 0.3s ease-in-out;
     }
 
-    span {
+    > span {
       font-size: 12px;
       color: #eee;
     }
@@ -64,13 +71,12 @@ export const Cart = styled(Link)`
 
 export const DropDown = styled.div`
   position: absolute !important;
-  margin-top: 10px;
   top: 100%;
   right: 0;
   background: #7159c1;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   z-index: 5;
-  width: 220px;
+  width: 270px;
   border-radius: 4px;
   padding: 20px;
   opacity: 0;
@@ -97,6 +103,7 @@ export const DropDown = styled.div`
       color: #fff;
       font-size: 14px;
       margin-left: 10px;
+      text-align: left;
 
       p {
         font-size: 11px;
@@ -112,14 +119,14 @@ export const DropDown = styled.div`
 
   .more {
     width: 100%;
-    margin: 5px 0;
+    margin: 2px 0;
     justify-content: center;
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: 3px;
-    font-size: 15px;
+    font-size: 25px;
   }
 
-  h2 {
+  > h2 {
     border-top: 1px solid rgba(0, 0, 0, 0.15);
     margin-top: 20px;
     padding-top: 20px;
@@ -133,7 +140,7 @@ export const DropDown = styled.div`
     }
     span:last-child {
       color: #fff;
-      font-size: 20px;
+      font-size: 22px;
       font-weight: bold;
     }
   }

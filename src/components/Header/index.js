@@ -16,10 +16,10 @@ function Header({ cartSize, cart, total, location }) {
       </Link>
 
       <Cart to="/cart" cartSize={cartSize}>
-        <div>
+        <div className="cart">
           <strong>Meu carrinho</strong>
+          <MdShoppingCart size={36} color="#fff" />
         </div>
-        <MdShoppingCart size={36} color="#fff" />
 
         {cart.length && location.pathname !== '/cart' ? (
           <DropDown>

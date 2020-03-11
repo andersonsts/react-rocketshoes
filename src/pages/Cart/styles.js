@@ -95,6 +95,11 @@ export const ProductTable = styled.table`
     background: none;
     border: 0;
     padding: 6px;
+    transition: all 0.25s;
+
+    &:active {
+      transform: scale(1.06);
+    }
   }
 `;
 
