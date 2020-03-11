@@ -19,27 +19,26 @@ function* addToCart({ id }) {
 
   const amount = currentAmount + 1;
 
-  if (amount > stockAmount) {
-    toast.error('Quantidade solicitada fora de estoque');
-    return;
-  }
+    if (amount > stockAmount) {
+      toast.error('Quantidade solicitada fora de estoque');
+      return;
+    }
 
-  if (productExists) {
-    yield put(updateAmountSuccess(id, amount));
-  } else {
-    const response = yield call(api.get, `/products/${id}`);
+    if (productExists) {
+      yield put(updateAmountSuccess(id, amount));
+    } else {
+      const response = yield call(api.get, `/products/${id}`);
 
-    const data = {
-      ...response.data,
-      amount: 1,
-      priceFormatted: formatPrice(response.data.price),
-      loadingProduct: true,
-    };
+      const data = {
+        ...response.data,
+        amount: 1,
+        priceFormatted: formatPrice(response.data.price),
+        loadingProduct: true,
+      };
 
-    yield put(addToCartSuccess(data));
+      yield put(addToCartSuccess(data));
 
-    // history.push('/cart');
-  }
+      // history.push('/cart');
 }
 
 function* updateAmount({ id, amount }) {

@@ -42,9 +42,7 @@ class Home extends Component {
     const data = response.data.map(product => ({
       ...product,
       priceFormatted: formatPrice(product.price),
-      loadingProduct: false,
     }));
-    console.log(data);
 
     this.setState({ products: data });
   }
@@ -73,7 +71,7 @@ class Home extends Component {
 
   render() {
     const { products, loading, ready } = this.state;
-    const { amount } = this.props;
+    const { amount, addingIds } = this.props;
 
     return (
       <>
@@ -109,20 +107,23 @@ class Home extends Component {
                   type="button"
                   className="add"
                   onClick={() => this.handleAddProduct(product.id)}
+                  disabled={addingIds.includes(product.id)}
                 >
-                  {product.loadingProduct ? (
-                    <Loader
-                      type="Puff"
-                      color="#00BFFF"
-                      height={20}
-                      width={20}
-                    />
-                  ) : (
-                    <div>
-                      <MdAddShoppingCart size={16} color="#fff" />
-                      {amount[product.id] || 0}
-                    </div>
-                  )}
+                  <div>
+                    <MdAddShoppingCart size={16} color="#fff" />
+                    {amount[product.id] || 0}
+                    {addingIds.includes(product.id) && (
+                      <div className="loading">
+                        <Loader
+                          type="Oval"
+                          color="#fff"
+                          width={18}
+                          height={18}
+                        />
+                      </div>
+                    )}
+                  </div>
+
                   <strong>ADICIONAR AO CARRINHO</strong>
                 </button>
               </ImagesGroup>
@@ -139,6 +140,7 @@ const mapStateToProps = state => ({
     amount[product.id] = product.amount;
     return amount;
   }, {}),
+  addingIds: state.cart.addingIds,
 });
 
 const mapDispatchToProps = dispatch =>
