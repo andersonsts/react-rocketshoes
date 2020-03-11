@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 // import { Carousel } from 'react-responsive-carousel';
 // import Loader from 'react-loader-spinner';
-import { lighten } from 'polished';
+import { lighten, darken } from 'polished';
 
 export const Container = styled.ul`
   display: grid;
@@ -49,7 +49,8 @@ export const ImagesGroup = styled.li`
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 
   &:hover figure {
-    opacity: 0.9;
+    opacity: 0.95;
+    transform: scale(1.05);
   }
 
   > svg {
@@ -62,7 +63,6 @@ export const ImagesGroup = styled.li`
     z-index: 2;
 
     &:hover {
-      transform: scale(1.05);
       cursor: pointer;
     }
   }
@@ -89,60 +89,84 @@ export const ImagesGroup = styled.li`
     border: 0;
     align-items: center;
     border-radius: 4px;
+    overflow: hidden;
+    height: 40px;
 
     margin-top: auto;
     transition: all 0.3s;
+
+    &:disabled {
+      cursor: wait;
+    }
 
     &:hover {
       background: ${lighten(0.05, '#7159c1')};
     }
 
-    div {
+    > div {
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
       padding: 12px;
       background: rgba(0, 0, 0, 0.1);
+      position: relative;
 
       svg {
-        font-size: 18px;
-        margin-right: 4px;
+        margin-right: 5px;
+      }
+
+      div.loading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: ${darken(0.02, '#7159c1')};
+
+        > div {
+          width: 18px;
+          height: 18px;
+        }
+
+        svg {
+          margin: 0;
+        }
       }
     }
 
     strong {
+      flex: 1;
+      text-align: center;
       color: #fff;
-      margin-left: 15px;
+      font-weight: bold;
     }
   }
 `;
 
 export const Images = styled.div`
-  width: 250px;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 70px;
-  margin-top: 10px;
+  margin: 10px 0;
 
-  div {
-    background: #fff;
-    width: 230px;
-    height: 200px;
-    border-radius: 2px;
-    align-self: center;
+  figure {
+    opacity: 1;
+    transition: all 0.4s;
 
-    figure {
-      opacity: 1;
-      transition: all 0.4s;
-      height: 200px;
+    img {
+      height: 250px;
+      width: 250px;
     }
+  }
 
-    figure:hover {
-      opacity: 0.9;
-      transform: scale(1.05);
-    }
+  figure:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
   }
 `;
 

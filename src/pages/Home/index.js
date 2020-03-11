@@ -94,11 +94,9 @@ class Home extends Component {
                   </div>
                 </AddFavorite>
                 <Images>
-                  <div>
-                    <figure>
-                      <img src={product.image} alt="Imagem" />
-                    </figure>
-                  </div>
+                  <figure>
+                    <img src={product.image} alt="Imagem" />
+                  </figure>
                 </Images>
                 <strong>{product.title}</strong>
                 <span>{product.priceFormatted}</span>
@@ -136,7 +134,7 @@ class Home extends Component {
 }
 
 const mapStateToProps = state => ({
-  amount: state.cart.reduce((amount, product) => {
+  amount: state.cart.products.reduce((amount, product) => {
     amount[product.id] = product.amount;
     return amount;
   }, {}),

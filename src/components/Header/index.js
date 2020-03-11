@@ -17,7 +17,6 @@ function Header({ cartSize }) {
       <Cart to="/cart" cartSize={cartSize}>
         <div>
           <strong>Meu carrinho</strong>
-          {/* <span>{cartSize} itens</span> */}
         </div>
         <MdShoppingCart size={36} color="#fff" />
       </Cart>
@@ -26,5 +25,5 @@ function Header({ cartSize }) {
 }
 
 export default connect(state => ({
-  cartSize: state.cart.length,
+  cartSize: state.cart.products.length,
 }))(Header);

@@ -17,9 +17,8 @@ export const Cart = styled(Link)`
   position: relative;
 
   &:after {
-    content: '${props => (props.cartSize > 0 ? props.cartSize : '')}';
+    content: '${props => props.cartSize}';
     color: #fff;
-    opacity: ${props => (props.cartSize > 0 ? '1' : '0')};
     width: 20px;
     height: 20px;
     padding: 1px;
