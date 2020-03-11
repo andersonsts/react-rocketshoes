@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { MdShoppingCart } from 'react-icons/md';
 
-import { Container, Cart } from './styles';
+import { formatPrice } from '../../util/format';
+import { Container, Cart, DropDown } from './styles';
 
 import logo from '../../assets/images/logo.svg';
 
-function Header({ cartSize }) {
+function Header({ cartSize, cart, total, location }) {
   return (
     <Container>
       <Link to="/">
@@ -19,6 +20,27 @@ function Header({ cartSize }) {
           <strong>Meu carrinho</strong>
         </div>
         <MdShoppingCart size={36} color="#fff" />
+
+        {cart.length && location.pathname !== '/cart' ? (
+          <DropDown>
+            {cart.map(product => (
+              <div>
+                <img src={product.image} alt={product.title} />
+                <div>
+                  {product.title}
+                  <p>
+                    {product.amount} x <span>{product.price}</span>
+                  </p>
+                </div>
+              </div>
+            ))}
+            {cartSize > 3 && <div className="more">...</div>}
+            <h2>
+              <span>TOTAL:</span>
+              <span>{total}</span>
+            </h2>
+          </DropDown>
+        ) : null}
       </Cart>
     </Container>
   );
@@ -26,4 +48,13 @@ function Header({ cartSize }) {
 
 export default connect(state => ({
   cartSize: state.cart.products.length,
-}))(Header);
+  cart: state.cart.products.slice(0, 3).map(product => ({
+    ...product,
+    price: formatPrice(product.price),
+  })),
+  total: formatPrice(
+    state.cart.products.reduce((total, product) => {
+      return total + product.price * product.amount;
+    }, 0)
+  ),
+}))(withRouter(Header));
