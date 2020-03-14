@@ -76,7 +76,7 @@ export const DropDown = styled.div`
   background: #7159c1;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   z-index: 5;
-  width: 270px;
+  width: 285px;
   border-radius: 4px;
   padding: 20px;
   opacity: 0;
