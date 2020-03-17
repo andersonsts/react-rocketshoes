@@ -52,7 +52,7 @@ Este projeto foi desenvolvido no [Bootcamp GoStack - Rocketseat](https://rockets
 Para clonar e executar essa aplicação você precisa do [Git](https://git-scm.com), [Node.js v10.16][nodejs] ou superior + [Yarn v1.13][yarn] ou superior instalado em sua máquina. Em seu terminal de comando, execute:
 
 ```bash
-# Clone this repository
+# Clone este repositório
 $ git clone https://github.com/andersonsts/react-rocketshoes
 
 # Entre no repositorio
@@ -66,7 +66,8 @@ $ yarn start
 ```
 
 ## :bookmark_tabs: Requisitos
-Antes de executar a aplicação, insira em seu terminal o seguinte comando: 
+Antes de executar a aplicação, insira em seu terminal o comando abaixo para iniciar
+a api utilizando [json-server](https://github.com/typicode/json-server).
 
 ```bash
 # Executa a api localmente na porta 3333
