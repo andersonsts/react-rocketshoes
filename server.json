@@ -50,7 +50,7 @@
     {
       "id": 4,
       "title": "Tênis VK Caminhada Confortável Detalhes Couro Masculino",
-      "favorite": false,
+      "favorite": true,
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis2.jpg",
       "price": 139.9
     },

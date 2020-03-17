@@ -26,6 +26,10 @@
   <a href="#bookmark_tabs-requisitos">Requisitos</a>
 </p>
 
+![App Screenshot](https://res.cloudinary.com/andersonsts/image/upload/v1584476745/home_plvrn7.png)
+
+![App Screenshot2](https://res.cloudinary.com/andersonsts/image/upload/v1584476745/cart_a2lvjd.png)
+
 ## :rocket: Tecnologias
 
 Este projeto foi desenvolvido no [Bootcamp GoStack - Rocketseat](https://rocketseat.com.br/bootcamp), com as seguintes tecnologias:
@@ -70,7 +74,7 @@ Antes de executar a aplicação, insira em seu terminal o comando abaixo para in
 a api utilizando [json-server](https://github.com/typicode/json-server).
 
 ```bash
-# Executa a api localmente na porta 3333
+# Executa a api na porta 3333
 $ json-server server.json -p 3333 -w 
 
 ```
