@@ -22,8 +22,8 @@
 
 <p align="center">
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#mag-observacoes">Observações</a>
+  <a href="#computer-como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#bookmark_tabs-requisitos">Requisitos</a>
 </p>
 
 ## :rocket: Tecnologias
@@ -47,7 +47,7 @@ Este projeto foi desenvolvido no [Bootcamp GoStack - Rocketseat](https://rockets
 -  [Reactotron](https://infinite.red/reactotron)
 -  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
-## :information_source: Como usar
+## :computer: Como usar
 
 Para clonar e executar essa aplicação você precisa do [Git](https://git-scm.com), [Node.js v10.16][nodejs] ou superior + [Yarn v1.13][yarn] ou superior instalado em sua máquina. Em seu terminal de comando, execute:
 
@@ -65,10 +65,24 @@ $ yarn install
 $ yarn start
 ```
 
-## :mag: Observações
-This project is under the MIT license. See the [LICENSE](https://github.com/lukemorales/react-rocketshoes/blob/master/LICENSE) for more information.
+## :bookmark_tabs: Requisitos
+Antes de executar a aplicação, insira em seu terminal o seguinte comando: 
+
+```bash
+# Executa a api localmente na porta 3333
+$ json-server server.json -p 3333 -w 
+
+```
 
 ---
 
+Feito por Anderson Santos :wave: [Entre em contato!](https://www.linkedin.com/in/andersonst-dev)
+
+
+[nodejs]: https://nodejs.org/
+[yarn]: https://yarnpkg.com/
+[vc]: https://code.visualstudio.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 
 
