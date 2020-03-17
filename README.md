@@ -77,7 +77,7 @@ $ json-server server.json -p 3333 -w
 
 ---
 
-Feito por Anderson Santos :wave: [Entre em contato!](https://www.linkedin.com/in/andersonst-dev)
+:rocket: Feito por Anderson Santos :wave: [Entre em contato!](https://www.linkedin.com/in/andersonst-dev)
 
 
 [nodejs]: https://nodejs.org/
