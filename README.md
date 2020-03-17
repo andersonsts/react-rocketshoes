@@ -5,7 +5,7 @@
 </h1>
 
 <h4 align="center">
-  NetShoes clone utilizando React e Redux
+  :shoe: NetShoes clone utilizando React e Redux
 </h4>
 
 <p align="center">
@@ -26,9 +26,9 @@
   <a href="#bookmark_tabs-requisitos">Requisitos</a>
 </p>
 
-![App Screenshot](https://res.cloudinary.com/andersonsts/image/upload/v1584476745/home_plvrn7.png)
+![App Screenshot](https://res.cloudinary.com/andersonsts/image/upload/v1584477440/home_ckrkdf.png)
 
-![App Screenshot2](https://res.cloudinary.com/andersonsts/image/upload/v1584476745/cart_a2lvjd.png)
+![App Screenshot2](https://res.cloudinary.com/andersonsts/image/upload/v1584477440/cart_xgns8o.png)
 
 ## :rocket: Tecnologias
 
