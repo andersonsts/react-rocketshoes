@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="React Rocketshoes" src="https://res.cloudinary.com/andersonsts/image/upload/v1584464447/shoes_uskes0.png" />
+    <img alt="React Rocketshoes" src="https://res.cloudinary.com/andersonsts/image/upload/v1584465234/shoes_aez8ud.png" />
     <br />
     React Rocketshoes
 </h1>
@@ -8,7 +8,7 @@
   NetShoes clone utilizando React e Redux
 </h4>
 
-<p>
+<p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/andersonsts/react-rocketshoes">
 
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/andersonsts/react-rocketshoes">
