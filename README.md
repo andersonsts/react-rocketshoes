@@ -22,8 +22,8 @@
 
 <p align="center">
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-executar">Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#bookmark_tabs-requisitos">Requisitos</a>
+  <a href="#bookmark_tabs-requisitos">Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-executar">Executar</a>
 </p>
 
 ![App Screenshot](https://res.cloudinary.com/andersonsts/image/upload/v1584477440/home_ckrkdf.png)
@@ -51,8 +51,17 @@ Este projeto foi desenvolvido no [Bootcamp GoStack - Rocketseat](https://rockets
 -  [Reactotron](https://infinite.red/reactotron)
 -  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
-## :information_source: Executar
+## :bookmark_tabs: Requisitos
+Antes de executar a aplicação, insira em seu terminal o comando abaixo para iniciar
+a api utilizando [json-server](https://github.com/typicode/json-server).
 
+```bash
+# Executa a api na porta 3333
+$ json-server server.json -p 3333 -w 
+
+```
+
+## :information_source: Executar
 Para clonar e executar essa aplicação você precisa do [Git](https://git-scm.com), [Node.js v10.16][nodejs] ou superior + [Yarn v1.13][yarn] ou superior instalado em sua máquina. Em seu terminal de comando, execute:
 
 ```bash
@@ -67,16 +76,6 @@ $ yarn install
 
 # Execute a aplicação
 $ yarn start
-```
-
-## :bookmark_tabs: Requisitos
-Antes de executar a aplicação, insira em seu terminal o comando abaixo para iniciar
-a api utilizando [json-server](https://github.com/typicode/json-server).
-
-```bash
-# Executa a api na porta 3333
-$ json-server server.json -p 3333 -w 
-
 ```
 
 ---
