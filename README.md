@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="React Rocketshoes" src="https://res.cloudinary.com/andersonsts/image/upload/v1584465234/shoes_aez8ud.png" />
+    <img alt="React Rocketshoes" src="https://res.cloudinary.com/andersonsts/image/upload/v1584494636/header_dwhhyx.png" />
     <br />
     React Rocketshoes
 </h1>
