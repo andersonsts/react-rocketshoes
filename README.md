@@ -22,7 +22,7 @@
 
 <p align="center">
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-executar">Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#bookmark_tabs-requisitos">Requisitos</a>
 </p>
 
@@ -37,7 +37,7 @@ Este projeto foi desenvolvido no [Bootcamp GoStack - Rocketseat](https://rockets
 -  [ReactJS](https://reactjs.org/)
 -  [Redux](https://redux.js.org/)
 -  [Redux-Saga](https://redux-saga.js.org/)
--  [React Router v4](https://github.com/ReactTraining/react-router)
+-  [React Router Dom](https://github.com/ReactTraining/react-router)
 -  [Axios](https://github.com/axios/axios)
 -  [History](https://www.npmjs.com/package/history)
 -  [Immer](https://github.com/immerjs/immer)
@@ -51,7 +51,7 @@ Este projeto foi desenvolvido no [Bootcamp GoStack - Rocketseat](https://rockets
 -  [Reactotron](https://infinite.red/reactotron)
 -  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
-## :information_source: Como usar
+## :information_source: Executar
 
 Para clonar e executar essa aplicação você precisa do [Git](https://git-scm.com), [Node.js v10.16][nodejs] ou superior + [Yarn v1.13][yarn] ou superior instalado em sua máquina. Em seu terminal de comando, execute:
 
