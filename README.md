@@ -28,7 +28,7 @@
 
 ![App Screenshot](https://res.cloudinary.com/andersonsts/image/upload/v1584477440/home_ckrkdf.png)
 
-![App Screenshot2](https://res.cloudinary.com/andersonsts/image/upload/v1584477440/cart_xgns8o.png)
+![App Screenshot4](https://res.cloudinary.com/andersonsts/image/upload/v1584477440/cart_xgns8o.png)
 
 ## :rocket: Tecnologias
 
