@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="React Rocketshoes" src="https://res.cloudinary.com/andersonsts/image/upload/v1584494636/header_dwhhyx.png" />
+    <img alt="React Rocketshoes" src="https://res.cloudinary.com/dmhdlolqy/image/upload/v1585086170/rocketshoes1_kjt8t7.png" />
     <br />
     React Rocketshoes
 </h1>
@@ -26,9 +26,13 @@
   <a href="#information_source-executar">Executar</a>
 </p>
 
-![App Screenshot](https://res.cloudinary.com/andersonsts/image/upload/v1584477440/home_ckrkdf.png)
+![App Screenshot](https://res.cloudinary.com/dmhdlolqy/image/upload/v1585086532/home_tefywx.png)
 
-![App Screenshot4](https://res.cloudinary.com/andersonsts/image/upload/v1584477440/cart_xgns8o.png)
+![App Screenshot2](https://res.cloudinary.com/dmhdlolqy/image/upload/v1585086532/drop_rjqjsd.png)
+
+![App Screenshot3](https://res.cloudinary.com/andersonsts/image/upload/v1584477440/cart_xgns8o.png)
+
+![App Screenshot4](https://res.cloudinary.com/dmhdlolqy/image/upload/v1585086531/cart_tbvy7a.png)
 
 ## :rocket: Tecnologias
 
@@ -49,7 +53,7 @@ Este projeto foi desenvolvido no [Bootcamp GoStack - Rocketseat](https://rockets
 -  [react-loader-spinner](https://github.com/mhnpd/react-loader-spinner)
 -  [json-server](https://github.com/typicode/json-server)
 -  [Reactotron](https://infinite.red/reactotron)
--  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
+-  [VS Code][vc] com [EditorConfig][vceditconfig] e [ESLint][vceslint]
 
 ## :bookmark_tabs: Requisitos
 Antes de executar a aplicação, insira em seu terminal o comando abaixo para iniciar
