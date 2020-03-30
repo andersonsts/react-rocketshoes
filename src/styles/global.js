@@ -13,8 +13,8 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
-    background: #5f4aa3 url(${background}) no-repeat center top;
+  body { 
+    background: rgba(65, 45, 125, 1) url(${background}) no-repeat center top;
     -webkit-font-smoothing: antialiased !important;
     height: 100%;
   }

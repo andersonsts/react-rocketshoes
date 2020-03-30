@@ -23,6 +23,9 @@ export const Cart = styled(Link)`
 
   &:after {
     content: '${props => props.cartSize}';
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
     width: 20px;
     height: 20px;
@@ -30,7 +33,7 @@ export const Cart = styled(Link)`
     font-weight: bold;
     font-size: 12px;
     border-radius: 50%;
-    background: red;
+    background: #7159c1;
     display: flex;
     align-items: center;
     justify-content: center;

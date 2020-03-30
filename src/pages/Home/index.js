@@ -87,7 +87,7 @@ class Home extends Component {
                 >
                   <div>
                     {product.favorite ? (
-                      <MdFavorite color="red" />
+                      <MdFavorite color="#ff2400" />
                     ) : (
                       <MdFavoriteBorder />
                     )}
